@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<system name="strobe">
+
+  <property value="1.0">systems/strobe/frequency</property>
+
+  <channel name="strobe">
+
+   <fcs_function name="systems/strobe/factor">
+     <function>
+       <sin>
+         <product>
+           <property>sim-time-sec</property>
+           <value>6.283185307</value>
+           <property>systems/strobe/frequency</property>
+         </product>
+       </sin>
+     </function>
+   </fcs_function>
+ 
+  </channel>
+
+</system>

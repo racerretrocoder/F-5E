@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+<!-- thanks to JSP Modell, at http://www.jpsmodell.de and Don Color Tarnanstriche 
+Hellenic Air Force
+"Aegean Blue" Schema
+Oberseite
+FS 35164 	FS 35164
+Blue Grey
+Unterseite
+Aluminium 	Aluminium
+F-5A Schema 1
+-->
+    <model>
+	        <livery>
+	            <name type="string">Aegean Blue 1</name>
+	            <texture>AegeanBlue-fuselage.png</texture>
+	        </livery>
+			<wings>
+				<name type="string">Aegean Blue 1</name>
+				<texture>AegeanBlue-wings.png</texture>
+			</wings>        
+			<cabine>
+				<name type="string">Aegean Blue 1</name>
+				<texture>turbine.png</texture>
+			</cabine>    
+			<fueltk>
+				<name type="string">Aegean Blue</name>
+				<texture>AegeanBlue-fueltank.png</texture>
+			</fueltk> 
+	</model>
+</sim>
+</PropertyList>

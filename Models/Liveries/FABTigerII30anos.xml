@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">FAB 30 Anos</name>
+				<texture>30anos-fuselage.png</texture>
+			</livery>
+			<wings>
+				<name type="string">White</name>
+				<texture>30anos-wings.png</texture>
+			</wings>        
+			<turbine>
+				<name type="string">White</name>
+				<texture>turbine.png</texture>
+			</turbine> 
+			<fueltk>
+				<name type="string">White</name>
+				<texture>30anos-fueltank.png</texture>
+			</fueltk> 
+    </model>
+</sim>
+</PropertyList>

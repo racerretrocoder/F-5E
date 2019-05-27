@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+	
+	<name>shaders</name>
+	<inherits-from>/Effects/model-combined-deferred</inherits-from>
+	<parameters>
+		<normalmap-enabled type="int">1</normalmap-enabled>
+		<texture n="2">
+			<image>Aircraft/rah-66/models/effects/normalmap.png</image>
+		</texture>
+	</parameters>
+  
+</PropertyList>

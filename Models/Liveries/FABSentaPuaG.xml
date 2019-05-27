@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+	        <livery>
+	            <name type="string">FAB SentaPua</name>
+	            <texture>FABSentaPua-fuselage.png</texture>
+	        </livery>
+			<wings>
+				<name type="string">FAB SentaPua</name>
+				<texture>FABSentaPua-wings.png</texture>
+			</wings>        
+			<cabine>
+				<name type="string">FAB SentaPua</name>
+				<texture>turbine.png</texture>
+			</cabine>    
+			<fueltk>
+				<name type="string">FAB SentaPua 2</name>
+				<texture>FABSentaPua-fueltank.png</texture>
+			</fueltk> 
+	</model>
+</sim>
+</PropertyList>

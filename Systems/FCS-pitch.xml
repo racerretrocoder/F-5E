@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<system name="FCS-pitch">
+
+  <channel name="Pitch">
+
+   <summer name="Pilot Pitch Sum">
+      <input>fcs/elevator-cmd-norm</input>
+      <input>fcs/pitch-trim-cmd-norm</input>
+      <clipto>
+        <min> -1 </min>
+        <max>  1 </max>
+      </clipto>
+   </summer>
+
+   <scheduled_gain name="Pitch Feel">
+      <input>fcs/pilot-pitch-sum</input>
+      <table>
+         <independentVar>velocities/mach</independentVar>
+            <tableData>
+                 0.0000	1.0000
+                 0.6000	0.7000
+                 1.2000	0.5000
+            </tableData>
+       </table>
+   </scheduled_gain>
+
+   <aerosurface_scale name="Elevator Control">
+      <input>fcs/pitch-feel</input>
+      <range>
+        <min> -0.35 </min>
+        <max>  0.30 </max>
+      </range>
+      <output>fcs/elevator-pos-rad</output>
+   </aerosurface_scale>
+
+   <aerosurface_scale name="elevator normalized">
+      <input>fcs/elevator-pos-rad</input>
+      <domain>
+        <min>-0.35</min>
+        <max> 0.35</max>
+      </domain>
+      <range>
+        <min>-1</min>
+        <max> 1</max>
+      </range>
+      <output>fcs/elevator-pos-norm</output>
+   </aerosurface_scale>
+
+  </channel>
+
+
+</system>

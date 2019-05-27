@@ -1,0 +1,36 @@
+AC3Db
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 1 1 1  spec 0 0 0  shi 10  trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "Light"
+loc -8.50909 0.514966 0
+data 4
+Mesh
+texture "lights.rgb"
+crease 45.000000
+numvert 8
+0 0 -0.5
+0 0 0.5
+0.5 0 0.5
+0.5 0 -0.5
+0 0.5 -0.5
+0 0.5 0.5
+0 -0.5 0.5
+0 -0.5 -0.5
+numsurf 2
+SURF 0x20
+mat 0
+refs 4
+2 0.442212 0.438212
+1 0.2495 0.438212
+0 0.2495 0.0527888
+3 0.442212 0.0527888
+SURF 0x0
+mat 0
+refs 4
+6 0.0567888 0.438212
+7 0.0567888 0.0527888
+4 0.442212 0.0527888
+5 0.442212 0.438212
+kids 0

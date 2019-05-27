@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<model>
+		<name>Chocks</name>
+		<path>Aircraft/F-5E/Models/Operations/Chocks/chocks.xml</path>
+		<condition>
+			<and>
+				<property>sim/multiplay/generic/int[8]</property>
+				<less-than>
+					<property>velocities/airspeed-kt</property>
+					<value>15</value>
+				</less-than>
+			</and>
+		</condition>
+		<offsets>
+			<x-m>1.1</x-m>
+			<y-m>-.025</y-m>
+			<z-m>.51</z-m>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Gpu</name>
+		<path>Aircraft/F-5E/Models/Operations/Gpu/gpu.xml</path>
+		<condition>
+			<and>
+				<property>sim/multiplay/generic/int[11]</property>
+				<less-than>
+					<property>velocities/airspeed-kt</property>
+					<value>15</value>
+				</less-than>
+			</and>
+		</condition>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>.51</z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Fuel truck</name>
+		<path>Aircraft/F-5E/Models/Operations/Fuel/Fuel.xml</path>
+		<condition>
+			<and>
+				<property>sim/multiplay/generic/int[9]</property>
+				<less-than>
+					<property>velocities/airspeed-kt</property>
+					<value>15</value>
+				</less-than>
+			</and>
+		</condition>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>.51</z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Cone</name>
+		<path>Aircraft/F-5E/Models/Operations/Cones/cone.xml</path>
+		<condition>
+			<and>
+				<property>sim/multiplay/generic/int[10]</property>
+				<less-than>
+					<property>velocities/airspeed-kt</property>
+					<value>15</value>
+				</less-than>
+			</and>
+		</condition>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>.51</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Engine Protection</name>
+		<path>Aircraft/F-5E/Models/Operations/Engine Protection/Disck.xml</path>
+		<condition>
+			<and>
+				<property>sim/multiplay/generic/int[7]</property>
+				<less-than>
+					<property>velocities/airspeed-kt</property>
+					<value>15</value>
+				</less-than>
+			</and>
+		</condition>
+		<offsets>
+			<x-m>0.00</x-m>
+			<y-m>0.00</y-m>
+			<z-m>0.00</z-m>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Pushback</name>
+		<!--path>Aircraft/F-5E/Models/Operations/Pushback/trator.xml</path-->
+		<path>Models\Airport\Pushback\Military.xml</path>
+		<condition>
+			<less-than-equals>
+				<property>velocities/airspeed-kt</property>
+				<value>80</value>
+			</less-than-equals>
+		</condition>
+		<!-- offset for trator pushback
+		<offsets>
+			<x-m>-1.1</x-m>
+			<y-m>0</y-m>
+			<z-m>.51</z-m>
+		</offsets>
+		-->
+		<offsets>
+			<x-m>-4.0</x-m>
+			<y-m>0</y-m>
+			<z-m>-1.3</z-m>
+		</offsets>
+	</model> 
+
+</PropertyList>

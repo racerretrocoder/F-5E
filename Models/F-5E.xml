@@ -1,0 +1,1707 @@
+<!-- A wrapper file for the F-5E 3D model -->
+
+<PropertyList>
+
+	<path>f5e.ac</path>
+
+	<!-- Livery System -->
+	<nasal>
+		<load>
+			var livery_update = aircraft.livery_update.new("Aircraft/F-5E/Models/Liveries", 10);
+			setprop("/sim/rendering/refl_correction", 0);
+			setprop("/sim/rendering/refl-type", 1);
+			setprop("/sim/rendering/fresnel-factor", 0.6);
+		</load>
+
+		<unload>
+			livery_update.stop();
+		</unload>
+	</nasal>
+
+	<animation>
+		<type>material</type>
+		<object-name>poly</object-name>
+		<object-name>LWingtipRail</object-name>
+		<object-name>RWingtipRail</object-name>
+		<object-name>rhngdoor</object-name>
+		<object-name>NGearDoorLeft</object-name>
+		<object-name>Pylon-centerline</object-name>
+		<object-name>NGearStrutDoor</object-name>
+		<object-name>NGearDoorRight</object-name>
+		<object-name>CanopyFrame</object-name>
+		<object-name>WindscreenFrame</object-name>
+		<object-name>LInlet</object-name>
+		<object-name>fuselage</object-name>
+		<object-name>RInlet</object-name>
+		<object-name>LLandingLight</object-name>
+		<object-name>RLandingLight</object-name>
+		<object-name>nose-well-cover</object-name>
+		<object-name>RInlet</object-name>
+		<object-name>LInlet</object-name>
+		<object-name>RBIdoorgear</object-name>
+		<object-name>LBIdoorgear</object-name>
+		<object-name>revoprobe</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>fuselage.png</texture>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>NGearTire</object-name>
+		<object-name>LMainTire</object-name>
+		<object-name>RMainTire</object-name>
+		<object-name>LWing</object-name>
+		<object-name>RWing</object-name>
+		<object-name>LHStab</object-name>
+		<object-name>RHStab</object-name>
+		<object-name>RSlat</object-name>
+		<object-name>LSlat</object-name>
+		<object-name>VTail</object-name>
+		<object-name>Rudder</object-name>
+		<object-name>tailhook</object-name>
+		<object-name>RBdoorgear</object-name>
+		<object-name>LBdoorgear</object-name>
+		<object-name>RleadingedgeFlap</object-name>
+		<object-name>RBFlap</object-name>
+		<object-name>RAileron</object-name>
+		<object-name>LleadingedgeFlap</object-name>
+		<object-name>LBFlap</object-name>
+		<object-name>LAileron</object-name>
+		<object-name>RSppedBrake</object-name>
+		<object-name>LSppedBrake</object-name>
+		<object-name>externalpylon</object-name>
+		<object-name>internalpylon</object-name>
+		<object-name>Pylon-centerline</object-name>
+		<property-base>sim/model/wings</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>wings.png</texture>
+	</animation>  
+
+
+
+	<animation>
+		<type>material</type>
+		<object-name>fueltankext</object-name>
+		<object-name>pilonftcentral</object-name>
+		<object-name>rabetafuel</object-name>
+		<object-name>rect</object-name>
+		<property-base>sim/model/fueltk</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>fueltank.png</texture>
+	</animation>
+
+	<animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+		<object-name>disk.003</object-name>
+		<object-name>Windscreen</object-name>
+		<object-name>CanopyGlass</object-name>
+	</animation>
+	<animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>sky.png</texture>
+		<object-name>WindscreenInternal</object-name>
+		<object-name>CanopyGlassInternal</object-name>
+	</animation>     
+
+	<!-- Livery System -->
+
+	<!-- Shaders and Glass shadow -->
+<!-- 
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>horizonte.png</texture>
+    <object-name>Windscreen</object-name>
+    <object-name>CanopyGlass</object-name>
+  </animation>
+  
+-->
+
+<animation>
+	<type>shader</type>
+	<shader>chrome</shader>
+	<texture>txt_environment1.rgb</texture>
+	<object-name>NozzleNeck</object-name>
+</animation>
+
+<animation>
+	<type>shader</type>
+	<shader>chrome</shader>
+	<texture>txt_environment2.rgb</texture>
+	<object-name>Nozzles</object-name>
+</animation>
+
+<animation>
+	<type>noshadow</type>
+	<object-name>CanopyGlass</object-name>
+	<object-name>Windscreen</object-name>
+</animation>
+
+<effect>
+	<inherits-from>Aircraft/F-5E/Models/Effects/ec135/ec135bumpspecreflectfuselage</inherits-from>
+	<object-name>LWingtipRail</object-name>
+	<object-name>RWingtipRail</object-name>
+	<object-name>rhngdoor</object-name>
+	<object-name>NGearDoorLeft</object-name>
+	<object-name>Pylon-centerline</object-name>
+	<object-name>NGearStrutDoor</object-name>
+	<object-name>NGearDoorRight</object-name>
+	<object-name>CanopyFrame</object-name>
+	<object-name>LInlet</object-name>
+	<object-name>fuselage</object-name>
+	<object-name>RInlet</object-name>
+	<object-name>LLandingLight</object-name>
+	<object-name>RLandingLight</object-name>
+	<object-name>nose-well-cover</object-name>
+	<object-name>RInlet</object-name>
+	<object-name>LInlet</object-name>
+	<object-name>RBIdoorgear</object-name>
+	<object-name>LBIdoorgear</object-name>
+	<object-name>revoprobe</object-name>
+</effect>
+
+<effect>
+	<inherits-from>Aircraft/F-5E/Models/Effects/ec135/ec135bumpspecreflectwings</inherits-from>
+	<object-name>LWing</object-name>
+	<object-name>RWing</object-name>
+	<object-name>LHStab</object-name>
+	<object-name>RHStab</object-name>
+	<object-name>RSlat</object-name>
+	<object-name>LSlat</object-name>
+	<object-name>VTail</object-name>
+	<object-name>Rudder</object-name>
+	<object-name>tailhook</object-name>
+	<object-name>RBdoorgear</object-name>
+	<object-name>LBdoorgear</object-name>
+	<object-name>RleadingedgeFlap</object-name>
+	<object-name>RBFlap</object-name>
+	<object-name>RAileron</object-name>
+	<object-name>LleadingedgeFlap</object-name>
+	<object-name>LBFlap</object-name>
+	<object-name>LAileron</object-name>
+	<object-name>RSppedBrake</object-name>
+	<object-name>LSppedBrake</object-name>
+	<object-name>externalpylon</object-name>
+	<object-name>internalpylon</object-name>
+	<object-name>Pylon-centerline</object-name>
+</effect>
+
+<effect>
+	<inherits-from>Aircraft/F-5E/Models/Effects/ec135/ec135bumpspecreflectfueltank</inherits-from>
+	<object-name>rect</object-name>
+	<object-name>fueltankext</object-name>
+	<object-name>rabetafuel</object-name>
+	<object-name>pilonftcentral</object-name>
+</effect>
+
+<!-- Pilot -->
+
+<animation>
+	<type>select</type>
+	<object-name>Pilot</object-name>
+	<condition>
+		<property>sim/multiplay/generic/int[18]</property>
+	</condition>
+</animation>
+
+<!-- Fuel Tank Extra -->
+<animation>
+	<type>select</type>
+	<object-name>fueltankext</object-name>
+	<object-name>tank_extra</object-name>
+	<object-name>Pylon-centerline</object-name>
+	<object-name>pilonftcentral</object-name>
+	<object-name>rabetafuel</object-name>
+	<object-name>rect</object-name>
+	<condition>
+		<property>sim/multiplay/generic/int[19]</property>
+	</condition>
+</animation>
+
+<!-- Airport Operations -->
+<model>
+	<path>Aircraft/F-5E/Models/Operations/operations.xml</path>
+</model>
+
+<!-- ******************** INSTRUMENTS *******************-->
+
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/AI/attitude.xml</path>
+	<offsets>
+		<x-m>-3.20686</x-m>
+		<y-m> -0.109268</y-m>
+		<z-m>0.821299</z-m>
+	</offsets>
+</model>
+
+<!-- nao necessario -->
+<model>
+	<path>Aircraft/DavePack/Instruments/RDMI/RDMI.xml</path>
+	<offsets>
+		<x-m>-3.17</x-m>
+		<y-m> 0.0</y-m>
+		<z-m>0.58</z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/DavePack/Instruments/RDMI/nav-select.xml</path>
+	<offsets>
+		<x-m>-3.18</x-m>
+		<y-m> 0.1</y-m>
+		<z-m>0.58</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.819338	-0.200584 -->
+
+	<path>Aircraft/F-5E/Models/Instruments/n2/Lrpm.xml</path>
+	<offsets>
+		<x-m>-3.17686</x-m>
+		<y-m>0.200584</y-m>
+		<z-m>0.819338</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.819338	-0.248917 -->
+	<path>Aircraft/F-5E/Models/Instruments/n2/Rrpm.xml</path>
+	<offsets>
+		<x-m>-3.17686</x-m>
+		<y-m>0.248917</y-m>
+		<z-m>0.819338</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.77043	-0.200584 -->
+	<path>Aircraft/DavePack/Instruments/EGT/EGT-1.xml</path>
+	<offsets>
+		<x-m>-3.183</x-m>
+		<y-m>0.200584</y-m>
+		<z-m>0.77043</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.77043	-0.248917 -->
+	<path>Aircraft/DavePack/Instruments/EGT/EGT-2.xml</path>
+	<offsets>
+		<x-m>-3.183</x-m>
+		<y-m>0.248917</y-m>
+		<z-m>0.77043</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.722097	-0.200584 -->
+	<path>Aircraft/F-5E/Models/Instruments/Nozzle/nozzle-1.xml</path>
+	<offsets>
+		<x-m>-3.183</x-m>
+		<y-m>0.200584</y-m>
+		<z-m>0.722097</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.722097	-0.248917 -->
+	<path>Aircraft/F-5E/Models/Instruments/Nozzle/nozzle-2.xml</path>
+	<offsets>
+		<x-m>-3.183</x-m>
+		<y-m>0.248917</y-m>
+		<z-m>0.722097</z-m>
+	</offsets>
+</model>
+
+<model>
+ <!-- -3.18791	0.821299	0.187463
+ -3.17657	0.821299	0.187463 -->
+ <path>Aircraft/DavePack/Instruments/AS/800/airspeed.xml</path>
+ <offsets>
+ 	<x-m>-3.19</x-m>
+ 	<y-m>-0.187463</y-m>
+ 	<z-m>0.821299</z-m>
+ </offsets>
+</model>
+
+<model>
+ <!-- ALTIMETRO -3.17657	0.741695	0.187463 
+-->
+<path>Aircraft/Davepack/Instruments/Alt/altimeter.xml</path>
+<offsets>
+	<x-m>-3.19657</x-m>
+	<y-m>-0.187463</y-m>
+	<z-m>0.741695</z-m>
+</offsets>
+</model>
+
+<model>
+ <!-- -3.18791	0.675367	0.0978707
+ -3.17657	0.675367	0.0978707 -->
+ <path>Aircraft/DavePack/Instruments/IVSI/IVSI.xml</path>
+ <offsets>
+ 	<x-m>-3.18</x-m>
+ 	<y-m> -0.0978707</y-m>
+ 	<z-m> 0.675367</z-m>
+ </offsets>
+</model>
+
+<model>
+ <!-- -3.18791	0.675367	0.217559
+ -3.17657	0.675367	0.217559 -->
+ <path>Aircraft/DavePack/Instruments/Flaps/flaps.xml</path>
+ <offsets>
+ 	<x-m>-3.18791</x-m>
+ 	<y-m>-0.217559</y-m>
+ 	<z-m> 0.675367</z-m>
+ </offsets>
+</model>
+
+<model>
+	<!-- -3.17621	0.697336	0.289365 -->
+	<path>Aircraft/F-5E/Models/Instruments/Gear/gear.xml</path>
+	<offsets>
+		<x-m>-3.20</x-m>
+		<y-m>-0.289365</y-m>
+		<z-m> 0.727336</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- XXX -->
+	<path>Aircraft/DavePack/Instruments/PanelLights/lights.xml</path>
+	<offsets>
+		<x-m>-3.19</x-m>
+		<y-m>-0.31</y-m>
+		<z-m>0.58</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.672901	-0.200584 -->
+	<path>Aircraft/F-5E/Models/Instruments/Fuel/Lfuel.xml</path>
+	<offsets>
+		<x-m>-3.185</x-m>
+		<y-m>0.200584</y-m>
+		<z-m>0.672901</z-m>
+	</offsets>
+</model>
+
+<model>
+	<!-- -3.17686	0.672901	-0.248917 -->
+	<path>Aircraft/F-5E/Models/Instruments/Fuel/Rfuel.xml</path>
+	<offsets>
+		<x-m>-3.185</x-m>
+		<y-m>0.248917</y-m>
+		<z-m>0.672901</z-m>
+	</offsets>
+</model>
+
+<model>
+ <!-- -3.17657	0.823643	-0.148884
+ -3.18791	0.823643	-0.148884 -->
+ <path>Aircraft/DavePack/Instruments/GMeter/gmeter.xml</path>
+ <offsets>
+ 	<x-m>-3.185</x-m>
+ 	<y-m>0.148884</y-m>
+ 	<z-m>0.823643</z-m>
+ </offsets>
+</model>
+
+<model>
+ <!-- -3.18791	0.766832	-0.146209
+ -3.17657	0.766832	-0.146209 -->
+ <path>Aircraft/F-5E/Models/Instruments/SAI/sai.xml</path>
+ <offsets>
+ 	<x-m>-3.17091</x-m>
+ 	<y-m>0.146209</y-m>
+ 	<z-m> 0.766832</z-m>
+ </offsets>
+</model>
+
+<model>
+	<!-- XXX -->
+	<path>Aircraft/F-5E/Models/Instruments/AOA/indexer.xml</path>
+	<offsets>
+		<x-m>-3.04</x-m>
+		<y-m> -0.07</y-m>
+		<z-m> 0.94</z-m>
+	</offsets>
+</model>
+
+<model>
+ <!-- -3.12304	1.08008	-0.169921
+-->
+<path>Aircraft/DavePack/Instruments/MagCompass/comp.xml</path>
+<offsets>
+	<x-m>-3.12304</x-m>
+	<y-m> 0.21</y-m>
+	<z-m> 1.00</z-m>
+</offsets>
+</model>
+
+ <!-- <model>
+ RADAR
+ -3.17657	0.704228	-0.016372
+ -3.18791	0.704228	-0.016372
+  <path>Aircraft/DavePack/Instruments/radar/radar.xml</path>
+  <offsets>
+   <x-m>-3.20304</x-m>
+   <y-m> 0.016372</y-m>
+   <z-m> 0.704228</z-m>
+  </offsets>
+ </model> 
+-->
+
+
+ <!--  <model>
+RADAR
+ -3.17657	0.704228	-0.016372
+ -3.18791	0.704228	-0.016372
+
+  <path>Aircraft/Instruments-3d/rwr/rwr.xml</path>
+  <offsets>
+   <x-m>-3.10304</x-m>
+   <y-m> 0.016372</y-m>
+   <z-m> 0.704228</z-m>
+  </offsets>
+ </model>  
+--> 
+
+<model>
+ <!-- RADAR
+ -3.17657	0.704228	-0.016372
+ -3.18791	0.704228	-0.016372
+-->
+<path>Aircraft/F-5E/Models/Instruments/Radar/radar.xml</path>
+<offsets>
+	<x-m>-3.20304</x-m>
+	<y-m> 0.016372</y-m>
+	<z-m> 0.704228</z-m>
+</offsets>
+</model> 
+
+<model>
+ <!-- FUEL -3.17686	0.672901	-0.298401
+-->
+<path>Aircraft/DavePack/Instruments/Fuel/fuel.xml</path>
+<offsets>
+	<x-m>-3.185</x-m>
+	<y-m> 0.298401</y-m>
+	<z-m> 0.672901</z-m>
+</offsets>
+</model> 
+
+<!-- Clock -3.18791	0.823643	-0.094798
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/Clock/clock.xml</path>
+	<offsets>
+		<x-m>-3.18091</x-m>
+		<y-m> 0.094798</y-m>
+		<z-m> 0.823643</z-m>
+	</offsets>
+</model> 
+
+<!-- OILTEMP -3.17686	0.722097	-0.298401
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/Oiltemp/oiltemp.xml</path>
+	<offsets>
+		<x-m>-3.17586</x-m>
+		<y-m> 0.298401</y-m>
+		<z-m> 0.722097</z-m>
+	</offsets>
+</model> 
+
+<!-- AOA -3.17657	0.675367	0.156931
+-3.18791	0.675367	0.156931
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/AOAb/aoa-gauge.xml</path>
+	<offsets>
+		<x-m>-3.17657</x-m>
+		<y-m> -0.156931</y-m>
+		<z-m> 0.675367</z-m>
+	</offsets>
+</model> 
+
+ <!-- HSI -3.17657	0.741909	0.107859
+-3.18791	0.741909	0.107859
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/HSI/hsi.xml</path>
+	<offsets> 
+		<x-m>-3.17657</x-m>
+		<y-m>-0.107859</y-m>
+		<z-m>0.741909</z-m>
+	</offsets>
+	<animation>
+		<type>noshadow</type>
+	</animation>
+</model>
+
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/HSI/hsi-2.xml</path>
+	<offsets> 
+		<x-m>-3.17657</x-m>
+		<y-m>-0.107859</y-m>
+		<z-m>0.741909</z-m>
+	</offsets>
+	<animation>
+		<type>noshadow</type>
+	</animation>
+</model>
+	<!--
+	<model>
+		<path>Aircraft/F-5E/Models/Instruments/VSI/vsi.xml</path>
+		<offsets> 
+			<x-m>-3.17657</x-m>
+			<y-m>-0.004</y-m>
+			<z-m>1.0176</z-m>
+			<pitch-deg>-14</pitch-deg>
+		</offsets>
+		<animation>
+			<type>noshadow</type>
+		</animation>
+	</model> 
+-->
+<!-- STICK -->
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/Stick/stick.xml</path>
+	<offsets> 
+		<x-m>-3.07616</x-m>
+		<y-m> 0</y-m>
+		<z-m>0.203125</z-m>
+	</offsets>
+	<animation>
+		<type>noshadow</type>
+	</animation>
+</model>
+
+<model>
+	<path>Aircraft/F-5E/Models/Instruments/guntype/guntype.xml</path>
+</model>
+
+<!-- effects ********************************************** -->
+
+<!-- Brake Chute -->
+<model>
+	<path>Aircraft/F-5E/Models/Stores/Chute/chute.xml</path>
+	<offsets>
+		<x-m>6.17</x-m>
+		<y-m>0</y-m>
+		<z-m>0.60</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+</model>
+
+<!-- Contrail -->
+<model>
+	<path>Aircraft/DavePack/Effects/Contrail/contrail.xml</path>
+	<offsets>
+		<x-m> 12.0 </x-m>
+		<y-m>  0.0 </y-m>
+		<z-m>  0.0 </z-m>
+	</offsets>
+</model>
+
+<!-- Gun Smoke -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/gunsmoke.xml</path>
+	<offsets>
+		<x-m> -12.0 </x-m>
+		<y-m>  -0.6 </y-m>
+		<z-m>  -0.8 </z-m>
+	</offsets>
+</model>
+
+<!-- Gun Smoke -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/gunsmoke.xml</path>
+	<offsets>
+		<x-m> -12.0 </x-m>
+		<y-m>  0.6 </y-m>
+		<z-m>  -0.8 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Vortex/condensation-left.xml</path>
+	<offsets>
+		<x-m>2.0</x-m>
+		<y-m>-4.0</y-m>
+		<z-m>0.0</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Vortex/condensation-right.xml</path>
+	<offsets>
+		<x-m>2.0</x-m>
+		<y-m>4.0</y-m>
+		<z-m>0.0</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+</model>
+
+<!-- left -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/tiptrail/tiptrail.xml</path>
+	<offsets>
+		<x-m>0.8575</x-m>
+		<y-m>-4.13313</y-m>
+		<z-m>0.30758</z-m>
+	</offsets>
+</model>
+
+<!-- right -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/tiptrail/tiptrail.xml</path>
+	<offsets>
+		<x-m>0.8575</x-m>
+		<y-m>4.13313</y-m>
+		<z-m>0.30758</z-m>
+	</offsets>
+</model>
+
+<!-- Afterburners -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Aferburner/left_plume.xml</path>
+</model>
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Aferburner/right_plume.xml</path>
+</model>
+
+<!--Shockwave-->
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/shockwave/preshock.xml</path>
+</model>
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/shockwave/shockwave.xml</path>
+</model>
+
+
+<!-- Left tail beacon flash -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/Red-beacon/flash.xml</path>
+	<offsets>
+		<x-m> 4.4</x-m>
+		<y-m>-0.1</y-m>
+		<z-m>2</z-m>
+	</offsets>
+</model>
+
+<!-- Right tail beacon flash -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/Red-beacon/flash.xml</path>
+	<offsets>
+		<x-m> 4.4</x-m>
+		<y-m> 0.1</y-m>
+		<z-m>2</z-m>
+	</offsets>
+</model>
+
+<!-- Lower beacon flash -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/Red-beacon/flash.xml</path>
+	<offsets>
+		<x-m>-2.5</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.4</z-m>
+	</offsets>
+</model>
+
+<!-- Tail navigation light 
+4.77498	2.17452	0.0332031
+4.77498	2.17452	-0.0351562
+ <model>
+   <path>Aircraft/F-5E/Models/Effects/Lights/RedLight.xml</path>
+   <offsets>
+     <x-m>4.77498</x-m>
+     <y-m>-0.036</y-m>
+     <z-m>2.17452</z-m>
+   </offsets>
+ </model>
+ 
+ Tail navigation light
+ <model>
+   <path>Aircraft/F-5E/Models/Effects/Lights/GreenLight.xml</path>
+   <offsets>
+     <x-m>4.77498</x-m>
+     <y-m>0.036</y-m>
+     <z-m>2.17452</z-m>
+   </offsets>
+ </model>
+-->
+
+<!-- Primary position light left 
+-1.34766	0.076172	1.09375
+-1.34766	0.066406	1.09375
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/GreenLight.xml</path>
+	<offsets>
+		<x-m>-1.34766</x-m>
+		<y-m>1.09375</y-m>
+		<z-m>0.07</z-m>
+	</offsets>
+</model>
+
+<!-- Primary position light right 
+-1.34766	0.076172	-1.0957
+-1.34766	0.066406	-1.0957
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/RedLight.xml</path>
+	<offsets>
+		<x-m>-1.34766</x-m>
+		<y-m>-1.0957</y-m>
+		<z-m>0.07</z-m>
+	</offsets>
+</model>
+
+<!-- Lower fuselage lights
+-2.19141	-0.027344	0.503906
+-->
+
+<!--
+<model>
+ <path>Aircraft/F-5E/Models/Effects/Lights/landinglight.xml</path>
+ <offsets>
+   <x-m>-2.19141</x-m>
+   <y-m>0.506</y-m>
+   <z-m>-0.027344</z-m>
+ </offsets>
+</model>
+-->
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/light-cone.xml</path>
+	<offsets>
+		<x-m>-2.19141</x-m>
+		<y-m>0.506</y-m>
+		<z-m>-0.027344</z-m>
+		<heading-deg>  -15 </heading-deg>
+	</offsets>
+</model>
+
+<!-- Lower fuselage lights
+-2.19141	-0.027344	-0.505859
+-->
+<!--
+<model>
+ <path>Aircraft/F-5E/Models/Effects/Lights/landinglight.xml</path>
+ <offsets>
+   <x-m>-2.19141</x-m>
+   <y-m>-0.506</y-m>
+   <z-m>-0.027344</z-m>
+ </offsets>
+</model> 
+-->
+
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/light-cone.xml</path>
+	<offsets>
+		<x-m>-2.19141</x-m>
+		<y-m>-0.506</y-m>
+		<z-m>-0.027344</z-m>
+		<heading-deg>  15 </heading-deg>
+	</offsets>
+</model>
+
+
+<!-- Dorsal formation light
+-1.97793	0.912109	-0.357422
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/flash.xml</path>
+	<offsets>
+		<x-m>-1.97793</x-m>
+		<y-m>-0.358</y-m>
+		<z-m>0.912109</z-m>
+	</offsets>
+</model>
+
+<!-- Dorsal formation light
+-1.97793	0.912109	0.355469
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/flash.xml</path>
+	<offsets>
+		<x-m>-1.97793</x-m>
+		<y-m>0.358</y-m>
+		<z-m>0.912109</z-m>
+	</offsets>
+</model> 
+
+
+<!-- Auxiliary position wing right up
+2.03027	-0.048828	-3.75586
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/RedLight.xml</path>
+	<offsets>
+		<x-m>2.03027</x-m>
+		<y-m>-3.75586</y-m>
+		<z-m>-0.03</z-m>
+	</offsets>
+</model> 
+
+<!-- Auxiliary position wing right down
+-1.97793	0.912109	0.355469
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/RedLight.xml</path>
+	<offsets>
+		<x-m>2.03027</x-m>
+		<y-m>-3.75</y-m>
+		<z-m>-0.10</z-m>
+	</offsets>
+</model> 
+
+<!-- Auxiliary position wing left up
+2.03027	-0.048828	-3.75586
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/GreenLight.xml</path>
+	<offsets>
+		<x-m>2.03027</x-m>
+		<y-m>3.75391</y-m>
+		<z-m>-0.03</z-m>
+	</offsets>
+</model> 
+
+<!-- Auxiliary position wing left down
+-1.97793	0.912109	0.355469
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/GreenLight.xml</path>
+	<offsets>
+		<x-m>2.03027</x-m>
+		<y-m>3.75391</y-m>
+		<z-m>-0.10</z-m>
+	</offsets>
+</model> 
+
+<!-- Taxi lights
+-0.810547	-0.360353	-0.727539
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/taxilight.xml</path>
+	<offsets>
+		<x-m>-0.9</x-m>
+		<y-m>-0.727539</y-m>
+		<z-m>-0.360353</z-m>
+	</offsets>
+</model> 
+
+<!-- Taxi lights
+-0.810547	-0.360353	-0.727539
+-->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Lights/taxilight.xml</path>
+	<offsets>
+		<x-m>-0.9</x-m>
+		<y-m>0.727539</y-m>
+		<z-m>-0.360353</z-m>
+	</offsets>
+</model>  
+
+<!-- Contrail-left -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Contrail/contrail-left.xml</path>
+	<offsets>
+		<x-m>  13.0 </x-m>
+		<y-m>  -0.5 </y-m>
+		<z-m>   0.0 </z-m>
+	</offsets>
+</model>
+
+<!-- Contrail-right -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/Contrail/contrail-right.xml</path>
+	<offsets>
+		<x-m>  13.0 </x-m>
+		<y-m>   0.5 </y-m>
+		<z-m>   0.0 </z-m>
+	</offsets>
+</model>
+
+
+<!-- Weapons -->
+
+  <!-- Fuel Tanl 
+  <model>
+    <path>Aircraft/F-5E/Models/Effects/FuelTank/fueltank.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </offsets>
+  </model>
+--> 
+
+<!-- Pilons coodinates 
+1.16309	-0.0566405	4.17773 -->
+
+<!-- Left Wing -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/MAA-1_Piranha/MAA-1Piranha.xml</path>
+	<offsets>
+		<x-m>  1.16309 </x-m>
+		<y-m>   -4.24773 </y-m>
+		<z-m>   -0.0566405 </z-m>
+	</offsets>
+</model>
+
+<!-- Right Wing -->
+<model>
+	<path>Aircraft/F-5E/Models/Effects/MAA-1_Piranha/MAA-1Piranha.xml</path>
+	<offsets>
+		<x-m>  1.16309 </x-m>
+		<y-m>   4.24773 </y-m>
+		<z-m>   -0.0566405 </z-m>
+	</offsets>
+</model>
+
+
+
+
+<!--New Cockpit-->
+<!--<model>
+  	<name>Cockpit</name>
+    <path>Aircraft/F-5E/Models/F-5Ecockpit.xml</path>
+    <offsets>
+      <x-m>   -2.85 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>   0.145 </z-m>
+    </offsets>
+</model>-->
+
+<!-- animations **************************************** -->
+
+<!-- NOSE GEAR -->
+
+
+<!-- porta trem dianteiro -->
+<!-- -3.8535	-0.363286	0 -->
+<animation>
+	<type>rotate</type>
+	<object-name>NGearStrutDoor</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>0.0</dep></entry>
+		<entry><ind>0.25</ind><dep>-29.25</dep></entry>
+		<entry><ind>0.50</ind><dep>-69.75</dep></entry>
+		<entry><ind>0.75</ind><dep>-80.0</dep></entry>
+		<entry><ind>1.00</ind><dep>-110.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>-3.8535</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-0.363286</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!-- trem dianteiro -->
+<!-- -3.92733	-0.106561	0 -->
+<animation>
+	<type>rotate</type>
+	<object-name>NGearStrutUpper</object-name>
+	<object-name>NGearForkUpper</object-name>
+	<object-name>NGearForkLower</object-name>
+	<object-name>NGearStrutLower</object-name>
+	<object-name>NGearTire</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>93.0</dep></entry>
+		<entry><ind>0.20</ind><dep>93.0</dep></entry>
+		<entry><ind>0.40</ind><dep>69.75</dep></entry>
+		<entry><ind>0.60</ind><dep>46.5</dep></entry>
+		<entry><ind>0.80</ind><dep>23.25</dep></entry>
+		<entry><ind>1.00</ind><dep>0.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>-3.92733</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-0.106561</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>NGearForkLower</object-name>
+	<property>fdm/jsbsim/systems/nose_lift/strut-pos-norm</property>
+	<factor>-0.23</factor>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>NGearTire</object-name>
+	<object-name>NGearStrutLower</object-name>
+	<property>fdm/jsbsim/systems/nose_lift/strut-pos-norm</property>
+	<factor>-0.23</factor>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>NGearForkUpper</object-name>
+	<property>fdm/jsbsim/systems/nose_lift/strut-pos-norm</property>
+	<factor>40</factor>
+	<center>
+		<x-m>-3.99</x-m>
+		<y-m> 0</y-m>
+		<z-m>-0.68</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>NGearForkLower</object-name>
+	<property>fdm/jsbsim/systems/nose_lift/strut-pos-norm</property>
+	<factor>-40</factor>
+	<center>
+		<x-m>-4.01</x-m>
+		<y-m> 0</y-m>
+		<z-m>-0.84</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+
+
+
+<!-- portas trem dianteiro -->
+<!-- -4.78515	-0.300785	-0.178711 -->
+
+<animation>
+	<type>rotate</type>
+	<object-name>NGearDoorRight</object-name>
+	<object-name>nose-well-cover</object-name>
+	<object-name>NGearDoorLeft</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>0.0</dep></entry>
+		<entry><ind>0.20</ind><dep>90.0</dep></entry>
+		<entry><ind>0.40</ind><dep>90.0</dep></entry>
+		<entry><ind>0.60</ind><dep>90.0</dep></entry>
+		<entry><ind>0.80</ind><dep>90.0</dep></entry>
+		<entry><ind>1.00</ind><dep>90.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>-4.78515</x-m>
+		<y-m>0.178711</y-m>
+		<z-m>-0.300785</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+
+<!-- portas trem dianteiro -->
+<!-- -4.78515	-0.300785	-0.178711
+ <animation>
+  <type>rotate</type>
+  <object-name>NGearDoorLeft</object-name>
+  <property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.00</ind><dep> 00.00</dep></entry>
+			<entry><ind>0.20</ind><dep> 00.00</dep></entry>
+			<entry><ind>0.40</ind><dep>-23.25</dep></entry>
+			<entry><ind>0.60</ind><dep>-46.50</dep></entry>
+			<entry><ind>0.80</ind><dep>-69.75</dep></entry>
+			<entry><ind>1.00</ind><dep>-90.00</dep></entry>
+		</interpolation>
+		<center>
+			<x-m>-4.78515</x-m>
+			<y-m>-0.178711</y-m>
+			<z-m>-0.300785</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>  
+ </animation>
+-->
+<!-- REAR GEAR TRIM -->
+
+<!-- Capa da roda do trem de pouso traseiro direito - 1.24609	-0.103516	-1.8457 -->
+<animation>
+	<type>rotate</type>
+	<object-name>RBdoorgear</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep> 00.0</dep></entry>
+		<entry><ind>0.10</ind><dep> 04.5</dep></entry>
+		<entry><ind>0.20</ind><dep> 14.0</dep></entry>
+		<entry><ind>0.30</ind><dep> 23.5</dep></entry>
+		<entry><ind>0.40</ind><dep> 33.0</dep></entry>
+		<entry><ind>0.50</ind><dep> 42.5</dep></entry>
+		<entry><ind>0.60</ind><dep> 52.0</dep></entry>
+		<entry><ind>0.70</ind><dep> 61.5</dep></entry>
+		<entry><ind>0.80</ind><dep> 71.0</dep></entry>
+		<entry><ind>0.90</ind><dep> 80.5</dep></entry>
+		<entry><ind>1.00</ind><dep>105.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>1.24609</x-m>
+		<y-m>1.8457</y-m>
+		<z-m>-0.103516</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!-- Capa da roda do trem de pouso traseiro esquerdo - 1.24609	-0.103516	1.84375 -->
+<animation>
+	<type>rotate</type>
+	<object-name>LBdoorgear</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep> 00.0</dep></entry>
+		<entry><ind>0.10</ind><dep>-04.5</dep></entry>
+		<entry><ind>0.20</ind><dep>-14.0</dep></entry>
+		<entry><ind>0.30</ind><dep>-23.5</dep></entry>
+		<entry><ind>0.40</ind><dep>-33.0</dep></entry>
+		<entry><ind>0.50</ind><dep>-42.5</dep></entry>
+		<entry><ind>0.60</ind><dep>-52.0</dep></entry>
+		<entry><ind>0.70</ind><dep>-61.5</dep></entry>
+		<entry><ind>0.80</ind><dep>-71.0</dep></entry>
+		<entry><ind>0.90</ind><dep>-80.5</dep></entry>
+		<entry><ind>1.00</ind><dep>-105.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>1.24609</x-m>
+		<y-m>-1.84375</y-m>
+		<z-m>-0.103516</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!-- porta trem traseiro interna direita - 0.87891	-0.257812	-0.210938 -->
+<animation>
+	<type>rotate</type>
+	<object-name>RBIdoorgear</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<factor>3</factor>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>00.00</dep></entry>
+		<entry><ind>0.15</ind><dep>-45.00</dep></entry>
+		<entry><ind>0.33</ind><dep>-90.00</dep></entry>
+		<entry><ind>0.66</ind><dep>-90.00</dep></entry>
+		<entry><ind>0.75</ind><dep>-45.00</dep></entry>
+		<entry><ind>1.00</ind><dep>00.00</dep></entry>		
+	</interpolation>
+	<center>
+		<x-m>0.87891</x-m>
+		<y-m>0.210938</y-m>
+		<z-m>-0.257812</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!-- porta trem traseiro interna esquerda - 0.87891	-0.257812	0.208984 -->
+<animation>
+	<type>rotate</type>
+	<object-name>LBIdoorgear</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<factor>3</factor>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>00.00</dep></entry>
+		<entry><ind>0.15</ind><dep>45.00</dep></entry>
+		<entry><ind>0.33</ind><dep>90.00</dep></entry>
+		<entry><ind>0.66</ind><dep>90.00</dep></entry>
+		<entry><ind>0.75</ind><dep>45.00</dep></entry>
+		<entry><ind>1.00</ind><dep>00.00</dep></entry>		
+	</interpolation>
+	<center>
+		<x-m>0.87891</x-m>
+		<y-m>-0.208984</y-m>
+		<z-m>-0.257812</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!-- Trem traseiro direito - 1.25392	-0.046875	-1.77734
+1.34571	-0.046875	-1.77734
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>RMainGearStrut</object-name>
+	<object-name>RMainTire</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>-90.00</dep></entry>
+		<entry><ind>0.25</ind><dep>-69.75</dep></entry>
+		<entry><ind>0.50</ind><dep>-46.50</dep></entry>
+		<entry><ind>0.75</ind><dep>-23.25</dep></entry>
+		<entry><ind>1.00</ind><dep>00.00</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>1.25392</x-m>
+		<y-m>1.77734</y-m>
+		<z-m>-0.046875</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+
+<!-- Trem traseiro direito - 
+1.25392	-0.046875	1.77539
+1.34571	-0.046875	1.77539
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>LMainGearStrut</object-name>
+	<object-name>LMainTire</object-name>
+	<property>gear/gear[0]/position-norm</property>
+	<interpolation>
+		<entry><ind>0.00</ind><dep>90.00</dep></entry>
+		<entry><ind>0.25</ind><dep>69.75</dep></entry>
+		<entry><ind>0.50</ind><dep>46.50</dep></entry>
+		<entry><ind>0.75</ind><dep>23.25</dep></entry>
+		<entry><ind>1.00</ind><dep>00.00</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>1.25392</x-m>
+		<y-m>-1.77539</y-m>
+		<z-m>-0.046875</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!--
+ <animation>
+  <type>select</type>
+  <object-name>NGearStrutUpper</object-name>
+  <object-name>NGearStrutDoor</object-name>
+  <object-name>NGearDoorLeft</object-name>
+  <object-name>NGearDoorRight</object-name>
+  <object-name>NGearForkUpper</object-name>
+  <object-name>NGearForkLower</object-name>
+    <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>NGearTire</object-name>
+  <object-name>NGearStrutLower</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>nose-well-cover</object-name>
+  <object-name>right-well-cover</object-name>
+  <object-name>left-well-cover</object-name>
+  <condition>
+   <equals>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>LMainGearDoor</object-name>
+  <object-name>LMainGearStrut</object-name>
+  <object-name>LMainTire</object-name>
+  <object-name>LMainGearDoorInner</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RMainGearDoor</object-name>
+  <object-name>RMainGearStrut</object-name>
+  <object-name>RMainTire</object-name>
+  <object-name>RMainGearDoorInner</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
+-->
+
+<!-- Rudder - 5.25782	0.636719	-0.000976555
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>Rudder</object-name>
+	<property>controls/flight/rudder</property>
+	<factor>22.5</factor>
+	<offset-deg>0</offset-deg>   
+	<center>
+		<x-m>5.25782</x-m>
+		<y-m>-0.000976555</y-m>
+		<z-m>0.636719</z-m>
+	</center>
+	<axis>
+		<x>0.0</x>
+		<y>0.0</y>
+		<z>3.0</z>
+	</axis>
+</animation>
+
+
+<!-- Aileron Esquerdo LAileron - 1.91406	-0.068359	2.68458
+1.91406	-0.068359	2.68458
+1.91406	-0.068359	2.68458
+1.91406	-0.068359	2.68458
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>LAileron</object-name>
+	<property>controls/flight/aileron</property>
+	<factor>25</factor>
+	<offset-deg>0</offset-deg>   
+	<center>
+		<x-m>1.91406</x-m>
+		<y-m>2.68458</y-m>
+		<z-m>-0.068359</z-m>
+	</center>
+	<axis>
+		<x>0.0</x>
+		<y>1.0</y>
+		<z>0.0</z>
+	</axis>
+</animation>
+
+
+<!-- Aileron Direito RAileron - 1.91406	-0.068359	-2.68652
+1.91406	-0.068359	-2.68652
+1.91406	-0.068359	-2.68652
+1.91406	-0.068359	-2.68652
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>RAileron</object-name>
+	<property>controls/flight/aileron</property>
+	<factor>-25</factor>
+	<offset-deg>0</offset-deg>   
+	<center>
+		<x-m>1.91406</x-m>
+		<y-m>-2.68652</y-m>
+		<z-m>-0.068359</z-m>
+	</center>
+	<axis>
+		<x>0.0</x>
+		<y>1.0</y>
+		<z>0.0</z>
+	</axis>
+</animation>
+
+
+<!-- Flap Esquerdo LBFlap - 2.00977	-0.0673825	-1.55664
+2.00977	-0.0673825	-1.55664
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>LBFlap</object-name>
+	<property>surface-positions/flap-pos-norm</property>
+	<interpolation>
+		<entry><ind>0.000</ind><dep> 0.000</dep></entry>
+		<entry><ind>0.150</ind><dep> 8.000</dep></entry>
+		<entry><ind>0.500</ind><dep> 8.000</dep></entry>
+		<entry><ind>0.750</ind><dep>16.000</dep></entry>
+		<entry><ind>1.000</ind><dep>20.000</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>2.00977</x-m>
+		<y-m>-1.55664</y-m>
+		<z-m>-0.0673825</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+
+<!-- Flap Direito RBFlap - -->
+<animation>
+	<type>rotate</type>
+	<object-name>RBFlap</object-name>
+	<property>surface-positions/flap-pos-norm</property>
+	<interpolation>
+		<entry><ind>0.000</ind><dep> 0.000</dep></entry>
+		<entry><ind>0.150</ind><dep> 8.000</dep></entry>
+		<entry><ind>0.500</ind><dep> 8.000</dep></entry>
+		<entry><ind>0.750</ind><dep>16.000</dep></entry>
+		<entry><ind>1.000</ind><dep>20.000</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>2.00977</x-m>
+		<y-m>1.55664</y-m>
+		<z-m>-0.0673825</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+
+<!-- Leading Edge Flap Esquerdo LSlat - -->
+<animation>
+	<type>rotate</type>
+	<object-name>LSlat</object-name>
+	<property>fdm/jsbsim/systems/autoslats/slat-pos-norm</property>
+	<factor>24</factor>
+	<axis>
+		<x1-m> 0.396</x1-m>
+		<y1-m>-1.555</y1-m>
+		<z1-m> 0.000</z1-m>
+		<x2-m> 1.502</x2-m>
+		<y2-m>-3.826</y2-m>
+		<z2-m>-0.029</z2-m>
+	</axis>  
+</animation>
+
+
+<!-- Leading Edge Flap Direito RSlat - -->
+<animation>
+	<type>rotate</type>
+	<object-name>RSlat</object-name>
+	<property>fdm/jsbsim/systems/autoslats/slat-pos-norm</property>
+	<factor>-24</factor>
+	<axis>
+		<x1-m> 0.396</x1-m>
+		<y1-m> 1.555</y1-m>
+		<z1-m> 0.000</z1-m>
+		<x2-m> 1.502</x2-m>
+		<y2-m> 3.826</y2-m>
+		<z2-m>-0.029</z2-m>
+	</axis>  
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>tailhook</object-name>
+	<property>fdm/jsbsim/gear/tailhook-pos-norm</property>
+	<factor>-65</factor>
+	<offset-deg>0</offset-deg>
+	<center>
+		<x-m>3.16</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.3</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- Speed Brake - 0.39258	-0.269531	-0.214844
+-->
+<animation>
+	<type>rotate</type>
+	<object-name>RSppedBrake</object-name>
+	<object-name>LSppedBrake</object-name>
+	<property>surface-positions/speedbrake-pos-norm</property>
+	<!--  <factor>80</factor> -->
+	<interpolation>
+		<entry><ind>0.0</ind><dep>0.0</dep></entry>
+		<entry><ind>0.1</ind><dep>15.0</dep></entry>
+		<entry><ind>0.5</ind><dep>30.0</dep></entry>
+		<entry><ind>1.0</ind><dep>45.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>0.39258</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-0.269531</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<!-- Taxi lights - -0.810547	-0.269531	-0.728516 -->
+
+
+<!-- Elevators -->
+<animation>
+	<type>rotate</type>
+	<object-name>LHStab</object-name>
+	<object-name>RHStab</object-name>
+	<property>surface-positions/elevator-pos-norm</property>
+	<factor>20</factor>
+	<offset-deg>0</offset-deg>   
+	<center>
+		<x-m> 5.02</x-m>
+		<y-m> 0</y-m>
+		<z-m>-0.11</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+
+<!-- Canopy -->
+<!-- -1.47502	0.970063	0 -->
+<animation>
+	<type>rotate</type>
+	<object-name>CanopyGlass</object-name>
+	<object-name>CanopyFrame</object-name>
+	<object-name>CanopyGlassInternal</object-name>
+	<property>canopy/position-norm</property>
+	<!--  <factor>80</factor> -->
+	<interpolation>
+		<entry><ind>0.0</ind><dep>0.0</dep></entry>
+		<entry><ind>0.1</ind><dep>0.5</dep></entry>
+		<entry><ind>0.5</ind><dep>40.0</dep></entry>
+		<entry><ind>1.0</ind><dep>80.0</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>-1.47502</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.970063</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>  
+</animation>
+
+<animation>
+	<type>spin</type>
+	<object-name>NGearTire</object-name>
+	<property>gear/gear[0]/rollspeed-ms</property>
+	<factor>30</factor>
+	<axis>
+		<x1-m>-4.067</x1-m>
+		<y1-m>1</y1-m>
+		<z1-m>-1.109</z1-m>
+		<x2-m>-4.067</x2-m>
+		<y2-m>-1</y2-m>
+		<z2-m>-1.109</z2-m>
+	</axis>
+</animation>
+
+
+<animation>
+	<type>spin</type>
+	<object-name>LMainTire</object-name>
+	<property>gear/gear[0]/rollspeed-ms</property>
+	<factor>-30</factor>
+	<axis>
+		<x1-m>1.303</x1-m>
+		<y1-m>-1.88</y1-m>
+		<z1-m>-1.055</z1-m>
+		<x2-m>1.303</x2-m>
+		<y2-m>-1.84</y2-m>
+		<z2-m>-1.055</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>spin</type>
+	<object-name>RMainTire</object-name>
+	<property>gear/gear[0]/rollspeed-ms</property>
+	<factor>30</factor>
+	<axis>
+		<x1-m>1.303</x1-m>
+		<y1-m>1.88</y1-m>
+		<z1-m>-1.055</z1-m>
+		<x2-m>1.303</x2-m>
+		<y2-m>1.84</y2-m>
+		<z2-m>-1.055</z2-m>
+	</axis>
+</animation>
+
+</PropertyList>
+

@@ -1,0 +1,31 @@
+MAA-1 Piranha
+=============
+	
+Missil ar-ar curto/médio alcance
+
+Fabricante: Mectron
+Função principal: missil ar-ar
+Alcance: 9km 	Velocidade: 2200km/h
+Tipo de ogiva : Fragmentação	Peso da ogiva : 12Kg.
+Peso total: 89Kg	Comprimento: 2.75 M.
+Diâmetro: 152mm	Sistema orientação: Infravermelhos
+
+O MAA-1, também conhecido como Piranha, é um missil ar-ar, da classe do Sidewinder de fabrico norte-americano. Trata-se de um missil, capaz de atingir alvos, dentro do alcance visual, guiado por um dispositivo que detecta a radiação infra-vermelha produzida pelos motores do avião alvo. Pode equipar aeronaves como o ALX, o AMX e o F-5 BR.
+
+Presentemente não se sabe qual é a percentagem de incorporação nacional do MAA-1, havendo especulação sobre o valor que deverá ir de 75 a 90%, consoante se fale de numero de componentes ou do valor global do missil, mas a não divulgação de informações, torna este calculo dificil.
+
+Os desenvolvimentos do Piranha, permitiram ainda o desenvolvimento dos lançadores dos vários aviões da FAB, de forma a que pudessem passar a operar esta arma. O MAA-1 pode ser utilizado a partir dos aviões AMX, F-5-BR e ALX.
+
+A Força Aérea Brasileira nunca chegou a adquirir o MAA-1 e problemas de orçamento aliados à obsolescência do projecto parecem ter condicionado o programa, e resultado em novos estudos e desenvolvimentos com vista a uma nova versão do míssil
+
+Informação genérica:
+O desenvolvimento inicial dos mísseis conhecidos como Piranha teve o seu inicio nos anos 70, quando em 1976, o Brasil se propôs substituir o missil AIM-9B Sidewinder, para evitar problemas com possiveis embargos por parte dos Estados Unidos. O missil, sería em tudo parecido ao Sidewinder, dispondo de sistemas de navegação identicos, embora o objectivo, fosse claramente produzir um missil superior ao AIM-9B, que equipava os aviões da FAB, especialmente o F-5.
+
+O programa do missil brasileiro foi tornado público, apenas em 1981, quando já se tinham começado a realizar vários estudos de definição de projecto, e se tinha mesmo iniciado a producção de alguns componentes.
+O programa foi então prejudicado pela crise que atingiu toda a industria militar brasileira, tendo a sua producção e a dos seus componentes sido transferida de uns fabricantes para outros. O atraso no programa resultou na pratica, na obsolescencia do projecto do Piranha, mesmo antes de o missil estar operacional.
+Estando o missil entretanto obsoleto, foi necessário voltar a replaneja-lo e rever o conceito, tendo em consideração os desenvolvimentos entretanto ocorridos internacionalmente. O programa foi re-iniciado em 1994, com a empresa MECTRON, e os primeiros ensaios foram feitos em 1995, e voltou a haver problemas com a necessidade de re-projectar alguns dos componentes, que se mostraram extremamente frágeis em condições reais, embora funcionassem em laboratório. Houve problemas graves com o detector de infravermelhos, que levaram a ter que re-projectar de novo vários componentes do missil.
+
+Após vários testes, o missil foi finalmente homologado em 2 de Outubro de 1998, e terá sido necessário recorrer ao apoio da Africa do Sul, para conseguir tornar o missil operacional.
+Seguiram-se testes para tornar o missil compativel com as asas do avião Tiger F-5, que também implicaram problemas de resolução complexa.
+
+FONTE : http://www.areamilitar.net/DIRECTORIO/MIS.aspx?nm=62

@@ -1,0 +1,29 @@
+<PropertyList>
+	<path>guntype.ac</path>
+	<animation>
+		<type>pick</type>
+		<object-name>mg_button</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<interval-sec>0.2</interval-sec>
+			<binding>
+				<command>nasal</command>
+				<script>guns.change_gun(0);</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>miss_button</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<interval-sec>0.2</interval-sec>
+			<binding>
+				<command>nasal</command>
+				<script>guns.change_gun(1);</script>
+			</binding>
+		</action>
+	</animation>
+</PropertyList>

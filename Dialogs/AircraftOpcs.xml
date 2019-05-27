@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<name>parachute_dialog</name>
+	<layout>vbox</layout>
+	<draggable>true</draggable>
+	<resizable>false</resizable>
+
+
+	<text>
+		<label>Aircraft Options</label>
+	</text>
+
+	<hrule/>
+	<text>
+		<label>Lights</label>
+	</text>
+
+	<checkbox>
+		<label>Landing Lights On/Off</label>
+		<property>sim/multiplay/generic/int[13]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[13]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/switch</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+	
+	<checkbox>
+		<label>Taxi Light On/Off</label>
+		<property>sim/multiplay/generic/int[14]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[14]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/switch</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+
+	<checkbox>
+		<label>Navigation Lights On/Off</label>
+		<property>sim/multiplay/generic/int[17]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[17]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/switch</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+
+	<checkbox>
+		<label>Dorsal Formation Lights On/Off</label>
+		<property>sim/multiplay/generic/int[15]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[15]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/switch</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+
+	<checkbox>
+		<label>Beacon Lights On/Off</label>
+		<property>sim/multiplay/generic/int[16]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[16]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/switch</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+
+	<hrule/>
+
+	<text>
+		<label>Airport Operations</label>
+	</text>
+
+	<group>
+		<layout>vbox</layout>
+
+		<checkbox>
+			<halign>left</halign>
+			<label>Chocks</label>
+			<property>sim/multiplay/generic/int[8]</property>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/multiplay/generic/int[8]</property>
+			</binding>
+		</checkbox>
+
+		<checkbox>
+			<halign>left</halign>
+			<label>Engine Safety Cones</label>
+			<property>sim/multiplay/generic/int[10]</property>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/multiplay/generic/int[10]</property>
+			</binding>
+		</checkbox>
+
+
+		<checkbox>
+			<halign>left</halign>
+			<label>Engine Protection</label>
+			<property>sim/multiplay/generic/int[7]</property>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/multiplay/generic/int[7]</property>
+			</binding>
+		</checkbox>
+
+		<checkbox>
+			<halign>left</halign>
+			<label>GPU</label>
+			<property>sim/multiplay/generic/int[11]</property>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/multiplay/generic/int[11]</property>
+			</binding>
+		</checkbox> 
+
+		<checkbox>
+			<halign>left</halign>
+			<label>Fuel Truck</label>
+			<property>sim/multiplay/generic/int[9]</property>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/multiplay/generic/int[9]</property>
+			</binding>
+		</checkbox>
+
+		<button>
+			<align>center</align>
+			<legend>Pushback</legend>
+			<binding>
+				<command>dialog-show</command>
+				<dialog-name>pushback</dialog-name>
+			</binding>
+		</button>
+		
+	</group>
+
+	<hrule/>
+
+	<text>
+		<label>Others</label>
+	</text>
+
+	<checkbox>
+		<label>Pilot Human Body On/Off</label>
+		<property>sim/multiplay/generic/int[18]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[18]</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+	<checkbox>
+		<label>Infinite Parachutes</label>
+		<property>/controls/switches/infinit-para</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/infinit-para</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+	<checkbox>
+		<label>Show Extra Tank</label>
+		<property>sim/multiplay/generic/int[19]</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/multiplay/generic/int[19]</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+
+
+	<hrule/>
+
+	<group>
+		<layout>hbox</layout>
+		<empty><stretch>true</stretch></empty>
+
+		<button>
+			<legend>Close</legend>
+			<default>true</default>
+			<key>Esc</key>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<empty><stretch>true</stretch></empty>
+	</group> 
+
+</PropertyList>
+

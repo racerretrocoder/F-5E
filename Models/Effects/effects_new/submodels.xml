@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<submodel>
+		<name>impact smoke</name>
+		<model>Aircraft/F-5E/Models/Effects/effects_new/flack.xml</model>
+		<speed>0</speed>
+		<repeat>true</repeat>
+		<delay>0.05</delay>
+		<count>-1</count>
+		<x-offset>0</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>0</z-offset>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset>0</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>35</buoyancy>
+		<life>5.0</life>
+	</submodel>
+
+</PropertyList>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<!--
+     This system extends the nose gear strut for takeoff.  The strut
+     lifts 9 inches in 3 seconds.  The strut stays extended until the nose gear
+     is retracted. 
+--> 
+
+
+<system name="nose_lift">
+
+  <channel>
+
+     <switch name="systems/nose_lift/logicA">
+        <default value="systems/nose_lift/strut-cmd"/>
+          <test value="0">
+                gear/gear-cmd-norm == 0
+          </test>
+       <output>systems/nose_lift/strut-cmd</output>
+     </switch>
+
+     <switch name="systems/nose_lift/logicB">
+        <default value="0"/>
+          <test value="1">
+                systems/nose_lift/strut-cmd == 1
+          </test>
+       <output>systems/nose_lift/strut-command</output>
+     </switch>
+
+     <kinematic name="systems/nose_lift/strut-pump">
+       <input>systems/nose_lift/strut-command</input>
+       <traverse>
+        <setting>
+          <position> 0 </position>
+          <time>     0 </time>
+        </setting>
+        <setting>
+          <position> 1 </position>
+          <time>     3 </time>
+        </setting>
+       </traverse>
+       <output>systems/nose_lift/strut-pos-norm</output>
+     </kinematic>
+
+     <fcs_function name="systems/nose_lift/strut-z-position">
+        <function>
+          <sum>
+             <value>-53.0</value>
+             <product>
+               <property>systems/nose_lift/strut-pos-norm</property>
+               <value>-9.0</value>
+             </product>
+          </sum>  
+        </function>
+        <output>gear/unit[0]/z-position</output>
+     </fcs_function>
+
+  </channel>
+
+</system>

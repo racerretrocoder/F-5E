@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+<!-- thanks to JSP Modell, at http://www.jpsmodell.de and Don Color Tarnanstriche 
+U. S. Air Force
+Aggressor
+"New Blue" Scheme
+
+Rundum
+	FS 35414
+Blue
+	FS 35109
+Dark Blue
+	FS 35164
+Intermediate Blue
+
+F-5E
+-->
+    <model>
+	        <livery>
+	            <name type="string">New Blue</name>
+	            <texture>NewBlue-fuselage.png</texture>
+	        </livery>
+			<wings>
+				<name type="string">Egypt Scheme</name>
+				<texture>NewBlue-wings.png</texture>
+			</wings>        
+			<cabine>
+				<name type="string">Egypt Scheme</name>
+				<texture>turbine.png</texture>
+			</cabine>    
+			<fueltk>
+				<name type="string">Egypt Scheme</name>
+				<texture>NewBlue-fueltank.png</texture>
+			</fueltk> 
+	</model>
+</sim>
+</PropertyList>

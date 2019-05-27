@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+	        <livery>
+	            <name type="string">Pampa 3</name>
+	            <texture>Pampa3-fuselage.png</texture>
+	        </livery>
+			<wings>
+				<name type="string">Pampa 2</name>
+				<texture>Pampa3-wings.png</texture>
+			</wings>        
+			<cabine>
+				<name type="string">Pampa 2</name>
+				<texture>Pampa3-turbine.png</texture>
+			</cabine>    
+			<fueltk>
+				<name type="string">Pampa 2</name>
+				<texture>Pampa3-fueltank.png</texture>
+			</fueltk> 
+	</model>
+</sim>
+</PropertyList>

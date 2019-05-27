@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- Radar, with 4 AI blips (green), 20 mile range   -->
+<!--             4 MP blips (yellow), 20 mile range  -->
+<!-- by Dave Culp                                       -->
+
+<PropertyList>
+
+ <path>radar.ac</path>
+
+
+</PropertyList>

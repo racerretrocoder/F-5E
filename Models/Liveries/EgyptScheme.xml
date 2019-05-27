@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+<!-- thanks to JSP Modell, at http://www.jpsmodell.de and Don Color Tarnanstriche 
+Singapur Air Force
+Egypt Scheme
+Oberseite
+FS 36118 	FS 36118
+Medium Gunship Grey
+Rundum
+FS 36270 	FS 36270
+Medium Grey
+Radome
+FS 36320 	FS 36320
+Dark Compass
+Ghost Grey
+
+F-5E
+-->
+    <model>
+	        <livery>
+	            <name type="string">Egypt Scheme</name>
+	            <texture>EgyptScheme-fuselage.png</texture>
+	        </livery>
+			<wings>
+				<name type="string">Egypt Scheme</name>
+				<texture>EgyptScheme-wings.png</texture>
+			</wings>        
+			<cabine>
+				<name type="string">Egypt Scheme</name>
+				<texture>turbine.png</texture>
+			</cabine>    
+			<fueltk>
+				<name type="string">Egypt Scheme</name>
+				<texture>EgyptScheme-fueltank.png</texture>
+			</fueltk> 
+	</model>
+</sim>
+</PropertyList>
