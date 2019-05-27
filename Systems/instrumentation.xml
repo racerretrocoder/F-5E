@@ -102,9 +102,9 @@ This file selects the instrumentation modules that should be available.
 	</vertical-speed-indicator>
 
 	<radar>
-		<name>radar</name>
-		<number>0</number>
-	</radar>
+  	<range type="int" archive="y">20</range>
+   	<minimized type="bool" archive="y">false</minimized>
+  </radar>
 
 	<tacan>
 		<name>tacan</name>
