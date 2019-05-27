@@ -179,6 +179,16 @@
 		<halign>left</halign>
 	</checkbox>
 	<checkbox>
+		<label>Hide Yoke</label>
+		<property>/sim/model/show-yoke</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>/sim/model/show-yoke</property>
+		</binding>
+		<live>true</live>
+		<halign>left</halign>
+	</checkbox>
+	<checkbox>
 		<label>Infinite Parachutes</label>
 		<property>/controls/switches/infinit-para</property>
 		<binding>
