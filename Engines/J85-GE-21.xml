@@ -13,8 +13,8 @@
 -->
 
 <turbine_engine name="J85">
-  <milthrust>    3500.0 </milthrust>
-  <maxthrust>    5000.0 </maxthrust>
+  <milthrust>    5500.0 </milthrust>
+  <maxthrust>    10000.0 </maxthrust>
   <bypassratio>     0.0 </bypassratio>
   <tsfc>            0.85 </tsfc>
   <atsfc>           1.72 </atsfc>
