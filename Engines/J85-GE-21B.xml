@@ -12,8 +12,8 @@
 -->
 
 <turbine_engine name="J85-GE-21B">
-  <milthrust>    3500.0 </milthrust>
-  <maxthrust>    5000.0 </maxthrust>
+  <milthrust>    4500.0 </milthrust>
+  <maxthrust>    10000.0 </maxthrust>
   <bypassratio>     1.0 </bypassratio>
   <tsfc>            0.80 </tsfc>
   <atsfc>           1.72 </atsfc>

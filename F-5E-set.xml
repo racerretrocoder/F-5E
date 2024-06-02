@@ -288,6 +288,13 @@ David Culp,  davidculp2@comcast.net
               <script>aircraft.livery.dialog.open()</script>
             </binding>
           </item>
+          <item>
+        <label>Event Log</label>
+        <binding>
+            <command>dialog-show</command>
+            <dialog-name>flightlog</dialog-name>
+        </binding>
+</item>
           <!--
 					<item>
 						<label>Landing Lights On/Off</label>
@@ -408,11 +415,42 @@ David Culp,  davidculp2@comcast.net
     </rendering>
   </sim>
   <!-- END OF SIM -->
+<!--PAYLOAD-->
+<payload>
+ <d-config>
+       <full_damage_dist_m type="double">3</full_damage_dist_m>
+        <use_hitpoints_instead_of_failure_modes_bool type="bool">true</use_hitpoints_instead_of_failure_modes_bool>
+        <hp_max type="double">100</hp_max>
+        <hitable_by_air_munitions type="bool">true</hitable_by_air_munitions>
+        <hitable_by_cannon type="bool">true</hitable_by_cannon>
+        <is_fleet type="bool">false</is_fleet>
+        <rwr_to_screen type="bool">true</rwr_to_screen>
+        <rwr_audio_extended type="bool">false</rwr_audio_extended>
+        <tacview_supported type="bool">false</tacview_supported>
+        <m28_auto type="bool">false</m28_auto>
+        <mlw_max type="double">0</mlw_max>
+        <auto_flare_caller type="bool">false</auto_flare_caller>
+         </d-config>
+<armament>
+	<enable-craters type="bool">true</enable-craters>
+	<MLW-bearing type="double">0</MLW-bearing>
+	<MLW-count type="int">0</MLW-count>
+	<MLW-launcher type="string"></MLW-launcher>
+	<MAW-bearing type="double">0</MAW-bearing>
+	<MAW-active type="bool">false</MAW-active>
+        <MAW-semiactive type="bool">false</MAW-semiactive>
+        <msg type="bool">true</msg>
+	<spike type="bool">false</spike>
+        <models type="string">Aircraft/F-5E/Models/emesary/</models>
+
+</armament>
+</payload>
+
   <systems>
     <refuel>
       <type>probe</type>
       <serviceable type="bool">true</serviceable>
-      <max-fuel-transfer-lbs-min>2000</max-fuel-transfer-lbs-min>
+      <max-fuel-transfer-lbs-min>3000</max-fuel-transfer-lbs-min>
       <offset-x-m>0</offset-x-m>
       <offset-y-m>0</offset-y-m>
       <offset-z-m>0</offset-z-m>
@@ -907,6 +945,10 @@ David Culp,  davidculp2@comcast.net
       <on-off type="bool">true</on-off>
     </ecm>
   </instrumentation>
+
+  <sam>
+            <damage type="int">1</damage>
+          </sam>
   <nasal>
     <f5e>
       <file>Aircraft/F-5E/Nasal/f5e.nas</file>
@@ -926,6 +968,18 @@ David Culp,  davidculp2@comcast.net
     <guns>
       <file>Aircraft/F-5E/Nasal/weapons.nas</file>
     </guns>
+<notifications>
+            <file>Aircraft/F-5E/Nasal/ArmamentNotification.nas</file>
+            <file>Aircraft/F-5E/Nasal/GeoBridgedTransmitter.nas</file>
+        </notifications>
+         <vector>
+            <file>Aircraft/F-5E/Nasal/vector.nas</file>
+        </vector>
+        <damage>
+            <file>Aircraft/F-5E/Nasal/damage.nas</file>
+        </damage>
+
+
     <!--
 		<limits>
 			<file>Aircraft/F-5E/Nasal/limits.nas</file>
