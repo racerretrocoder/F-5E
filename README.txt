@@ -1,4 +1,5 @@
-                                 |                                             
+Added multiplayer damage
+				 |
                                  |                                             
                                  |                                             
                                 _|_                                            
@@ -77,7 +78,7 @@ To- Do:
 - Instruments (from others GPLed FG models)
 - f5e.ac panel parts and other addictions.
 
-2. The Dave´s Culp Northrop F-5E Tiger II version 0.1
+2. The Daveï½´s Culp Northrop F-5E Tiger II version 0.1
 
     * Northrop F-5E Tiger II
     * Source: Converted from a freeware Alpha Simulations model.
@@ -129,15 +130,15 @@ Best regards,
 Prestes Hangar
 
 ---------------------------------------------------------------------------
-PORTUGUÊS - BRASIL
+PORTUGUï¾ŠS - BRASIL
 ---------------------------------------------------------------------------
 
-LICENÇA
+LICENï¾‡A
 =======
 
-1. O trabalho do PRESTES Hangar - Divisão Valente.
+1. O trabalho do PRESTES Hangar - Divisç¸Š Valente.
 
-Este trabalho estEsob a licença Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported. Veja o arquivo LICENSE.txt, ou http://presteshangar.blogspot.com, or http://presteshangar.wikidot.com/start, para mais informação sobre a licença. 
+Este trabalho estãƒ»sob a licenè»‹ Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported. Veja o arquivo LICENSE.txt, ou http://presteshangar.blogspot.com, or http://presteshangar.wikidot.com/start, para mais informaéˆ¬o sobre a licenè»‹. 
 
 (CC) 2009 Isaias V. Prestes (PRESTES Hangar)
 
@@ -153,36 +154,36 @@ Este trabalho estEsob a licença Creative Commons Attribution-Noncommercial-Shar
 - Instruments (de outros modelo GPLed do FG)
 - f5e.ac partes do painel
 
-2. O Northrop F-5E Tiger II de Dave Culp versão 0.1
+2. O Northrop F-5E Tiger II de Dave Culp versç¸Š 0.1
 
     * Northrop F-5E Tiger II
     * Origem: Convertido de um modelo Alpha Simulations freeware.
-    * Licença: "CC-BY-NC-SA"
+    * Licenè»‹: "CC-BY-NC-SA"
     * Compatibilidade: FlightGear 1.9.x
 
 
 3. Splash image
 
-Imagem de apresentação de Sotomayor, sob a licença Creative Commons, original em "Treino da Força Aérea Brasileira" http://www.flickr.com/photos/59098052@N00/3831383541
+Imagem de apresentaéˆ¬o de Sotomayor, sob a licenè»‹ Creative Commons, original em "Treino da Forè»‹ Aé§»ea Brasileira" http://www.flickr.com/photos/59098052@N00/3831383541
 
     
 O Northrop F-5E Tiger II
 ========================
 
-O Northrop F-5E Tiger II Eum caça tático de defesa aérea e ataque ao solo. O F-5E (versão mais potente do F-5A Freedom Fighter) tornou-se um dos aviões mais operados no mundo. A variante original F-5A foi testada em combate no VietnE no Programa Skoshi Tiger. O F-5E Eextremamente manobrável e rápido, constituindo-se um excelente avião para combates aéreos.
+O Northrop F-5E Tiger II ãƒ»um caè»‹ tç–¸ico de defesa aé§»ea e ataque ao solo. O F-5E (versç¸Š mais potente do F-5A Freedom Fighter) tornou-se um dos aviî‘s mais operados no mundo. A variante original F-5A foi testada em combate no Vietnãƒ» no Programa Skoshi Tiger. O F-5E ãƒ»extremamente manobrç–±el e rç–³ido, constituindo-se um excelente aviç¸Š para combates aé§»eos.
 
-Recentemente, a FAB (Força Aérea Brasileira) deu inú€io a um programa de aquisição e modernização de seus F-5E que passarão para o padrão F-5EM. A revitalização dos 47 caças, deverEcustar em torno de US$ 285 milhões. O motor e célula dos aviões permanecerão os mesmos, mas a sua eletrônica (HUD, radar e painel de controle) serão extremamente modificados.
+Recentemente, a FAB (Forè»‹ Aé§»ea Brasileira) deu inå…¤io a um programa de aquisiéˆ¬o e modernizaéˆ¬o de seus F-5E que passarç¸Š para o padrç¸Š F-5EM. A revitalizaéˆ¬o dos 47 caè»‹s, deverãƒ»custar em torno de US$ 285 milhî‘s. O motor e cé§˜ula dos aviî‘s permanecerç¸Š os mesmos, mas a sua eletrîŒica (HUD, radar e painel de controle) serç¸Š extremamente modificados.
 
-Atualmente, foram comemorados os 30 anos de serviço da aeronave na Força Aérea Brasileira, sendo que um exemplar recebeu uma pintura comemorativa especial, representando um tigre.
+Atualmente, foram comemorados os 30 anos de serviè¼Ÿ da aeronave na Forè»‹ Aé§»ea Brasileira, sendo que um exemplar recebeu uma pintura comemorativa especial, representando um tigre.
 
 
 O Tigre no Brasil (FAB)
 =======================
 
-No Brasil, a história do F-5 iniciou na prática em março de 1975, porém, ele esteve cotado para equipar a FAB desde 1965, em sua versão F-5A/B. Em 1967, ele foi novamente cogitado, desta vez como vetor do projeto SISDACTA. A preferência era para o F-4 Phantom, mas este foi vetado pelos americanos, que em contrapartida ofereceram o F-5C (versão proposta pela Northrop com melhorias baseadas no relatório de avaliação feito no VietnE.
-O impasse norte-americano favoreceu os franceses, tendo a FAB adquirido 16 Dassault Mirage III. Numa nova disputa internacional, realizada a partir de 1971 para substituir os AT-33A, na qual participaram o Fiat G-91, MB-326K, Harrier Mk-50, Jaguar GR1 e A-4F, saiu vencedor o caça da Northrop, agora em sua versão F-5E. Começava a longa história de sucesso do Tiger II na FAB, que continua atEhoje e ainda deve durar atE2018.
-A FAB recebeu 6 F-5B (FAB 4800 a 4805), 4 F-5F (FAB 4806 a 4809) e 58 F-5E (FAB 4820 a 4877) que foram adquiridos em dois lotes distintos. O primeiro lote em 1973, direto da fábrica (06 F-5B + 36 F-5E), ao valor de US$ 115 milhões e o segundo lote, em 1988, ex-USAF (04 F-5F e 22 F-5E), ao custo total de US$ 13,1 milhões. As primeiras aeronaves da "Operação Tigre", como ficou conhecido o translado do primeiro lote, foram entregues a partir de 28 de fevereiro de 1975 em Palmdale. Eram 3 F-5B, que chegaram ao Brasil no dia 06 de março do mesmo ano, sendo seguidos de outros 3 F-5B em 13 de maio. Em 12 de junho de 1975, chegavam os primeiros 4 F-5E EBAGL, dando inú€io a uma ponte aérea que sEterminaria em 12 de fevereiro do ano seguinte, totalizando 36 aeronaves.
-Em 1985, depois de muito procurar, chegou-se a um acordo com o governo Reagan, que aceitou negociar 4 F-5F e 22 F-5E, que sairiam das fileiras da USAF, a um custo de US$ 13,1 milhões, uma bagatela. Por volta de Setembro de 2006, especulava-se a aquisição de 9 aeronaves F-5E Tiger II, usadas da Arábia Saudita, sendo 6 F-5E e 3 F-5F. Esta compra, entretanto, não foi adiante, vindo a Força Aérea Brasileira a adquirir um lote de aeronaves pertencentes EReal Força Aérea da Jordânia. No total foram compradas 11 aeronaves, sendo 8 F-5E monoplaces e 3 F-5F biplaces. As primeiras aeronaves vindas da Jordânia chegaram no Brasil em 19 agosto de 2008 e foram enviadas ao Parque de Material da Aeronáutica de São Paulo (PAMA-SP). Todas os F-5 ex-Jordânia deverão ser convertidos para o padrão F-5EM e F-5FM.
+No Brasil, a histî‰¦ia do F-5 iniciou na prç–¸ica em marè¼Ÿ de 1975, poré§‘, ele esteve cotado para equipar a FAB desde 1965, em sua versç¸Š F-5A/B. Em 1967, ele foi novamente cogitado, desta vez como vetor do projeto SISDACTA. A preferéº©cia era para o F-4 Phantom, mas este foi vetado pelos americanos, que em contrapartida ofereceram o F-5C (versç¸Š proposta pela Northrop com melhorias baseadas no relatî‰¦io de avaliaéˆ¬o feito no Vietnãƒ».
+O impasse norte-americano favoreceu os franceses, tendo a FAB adquirido 16 Dassault Mirage III. Numa nova disputa internacional, realizada a partir de 1971 para substituir os AT-33A, na qual participaram o Fiat G-91, MB-326K, Harrier Mk-50, Jaguar GR1 e A-4F, saiu vencedor o caè»‹ da Northrop, agora em sua versç¸Š F-5E. Comeè»‹va a longa histî‰¦ia de sucesso do Tiger II na FAB, que continua atãƒ»hoje e ainda deve durar atãƒ»2018.
+A FAB recebeu 6 F-5B (FAB 4800 a 4805), 4 F-5F (FAB 4806 a 4809) e 58 F-5E (FAB 4820 a 4877) que foram adquiridos em dois lotes distintos. O primeiro lote em 1973, direto da fç•¸rica (06 F-5B + 36 F-5E), ao valor de US$ 115 milhî‘s e o segundo lote, em 1988, ex-USAF (04 F-5F e 22 F-5E), ao custo total de US$ 13,1 milhî‘s. As primeiras aeronaves da "Operaéˆ¬o Tigre", como ficou conhecido o translado do primeiro lote, foram entregues a partir de 28 de fevereiro de 1975 em Palmdale. Eram 3 F-5B, que chegaram ao Brasil no dia 06 de marè¼Ÿ do mesmo ano, sendo seguidos de outros 3 F-5B em 13 de maio. Em 12 de junho de 1975, chegavam os primeiros 4 F-5E ãƒ»BAGL, dando inå…¤io a uma ponte aé§»ea que sãƒ»terminaria em 12 de fevereiro do ano seguinte, totalizando 36 aeronaves.
+Em 1985, depois de muito procurar, chegou-se a um acordo com o governo Reagan, que aceitou negociar 4 F-5F e 22 F-5E, que sairiam das fileiras da USAF, a um custo de US$ 13,1 milhî‘s, uma bagatela. Por volta de Setembro de 2006, especulava-se a aquisiéˆ¬o de 9 aeronaves F-5E Tiger II, usadas da Arç•¸ia Saudita, sendo 6 F-5E e 3 F-5F. Esta compra, entretanto, nç¸Š foi adiante, vindo a Forè»‹ Aé§»ea Brasileira a adquirir um lote de aeronaves pertencentes ãƒ»Real Forè»‹ Aé§»ea da Jordç©—ia. No total foram compradas 11 aeronaves, sendo 8 F-5E monoplaces e 3 F-5F biplaces. As primeiras aeronaves vindas da Jordç©—ia chegaram no Brasil em 19 agosto de 2008 e foram enviadas ao Parque de Material da Aeronç–¼tica de Sç¸Š Paulo (PAMA-SP). Todas os F-5 ex-Jordç©—ia deverç¸Š ser convertidos para o padrç¸Š F-5EM e F-5FM.
 
 
 FONTE : http://pt.wikipedia.org/wiki/Northrop_F-5E_Tiger_II
@@ -192,21 +193,21 @@ CHANGELOG
 =========
 
 
-Versão alpha - 0.0.4 04/07/2010
-		- Novas cameras, configuração de luzes, disponibilidade de uma versão sem limites estruturais.
-Versão alpha - 0.0.3 04/03/2010
-		- Melhorias no FDM, animação do trem dianteiro para estrutura de extensão, trem dianteiro revisado, revisão do nose_lift.xml e correção da troca de pinturas no MP.
-Versão alpha - 0.0.2 20/12/2009
-		- Melhorias no FDM, correções na textura de instrumento e modelo 3d.
-Versão alpha - 0.0.1 16/12/2009
-		- Primeira apresentação do trabalho. Adicionado painel 3d realútico, capacidade de reabastecimento em vôo (REVO), suporte livery selection, melhorias no FDM e adições ao -set.xml.
+Versç¸Š alpha - 0.0.4 04/07/2010
+		- Novas cameras, configuraéˆ¬o de luzes, disponibilidade de uma versç¸Š sem limites estruturais.
+Versç¸Š alpha - 0.0.3 04/03/2010
+		- Melhorias no FDM, animaéˆ¬o do trem dianteiro para estrutura de extensç¸Š, trem dianteiro revisado, revisç¸Š do nose_lift.xml e correéˆ¬o da troca de pinturas no MP.
+Versç¸Š alpha - 0.0.2 20/12/2009
+		- Melhorias no FDM, correé‹es na textura de instrumento e modelo 3d.
+Versç¸Š alpha - 0.0.1 16/12/2009
+		- Primeira apresentaéˆ¬o do trabalho. Adicionado painel 3d realï¨tico, capacidade de reabastecimento em vîŒŸ (REVO), suporte livery selection, melhorias no FDM e adié‹es ao -set.xml.
 
 
 
-Desenvolvido pelo Prestes Hangar. Disponú“el em  http://presteshangar.blogspot.com ou http://presteshangar.wikidot.com/start
+Desenvolvido pelo Prestes Hangar. Disponå’©el em  http://presteshangar.blogspot.com ou http://presteshangar.wikidot.com/start
 
 
-INSTALAÇÃO
+INSTALAï¾‡ï¾ƒO
 ==========
 
 Descompacte o arquivo .zip usando o programa TUGZip na pasta PASTA_BASE_DO_Flightgear\Data\Aircraft
